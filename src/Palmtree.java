@@ -1,9 +1,8 @@
 import javax.swing.*;
 
 public class Palmtree extends Plant {
-    private Liquid liquid = Liquid.TAPWATER;                    //inkapsling
-    private double liquidPerM = 0.5;                            //inkapsling
-    private double liquidAmount = liquidPerM * getHeight();     //inkapsling
+    protected Liquid liquid = Liquid.TAPWATER;                    //inkapsling
+    protected double liquidPerM = 0.5;                            //inkapsling
 
     Palmtree(String name, double height) {
         super(name, height);
@@ -14,7 +13,7 @@ public class Palmtree extends Plant {
     }
 
     public double getLiquidAmount() {
-        return liquidAmount;
+        return liquidPerM * getHeight();
     }
 
 

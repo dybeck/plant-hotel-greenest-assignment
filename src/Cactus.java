@@ -1,8 +1,8 @@
 import javax.swing.*;
 
 public class Cactus extends Plant {
-    private Liquid liquid = Liquid.MINERALWATER;        //inkapsling
-    private double liquidAmount = 0.02;                  //inkapsling
+    protected Liquid liquid = Liquid.MINERALWATER;        //inkapsling
+    protected double liquidAmount = 0.02;                  //inkapsling
 
 
     Cactus(String name, double height) {

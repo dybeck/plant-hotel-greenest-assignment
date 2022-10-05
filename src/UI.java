@@ -9,7 +9,6 @@ public class UI {
         inputBlankError = "Inget namn inskrivet";
         notOnHotel = "finns ej på hotellet";
 
-
         while (true) {
             String input = JOptionPane.showInputDialog(null, systemQuery);
             if (input == null) {

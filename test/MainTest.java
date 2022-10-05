@@ -1,10 +1,11 @@
+import org.junit.jupiter.api.Test;
 public class MainTest {
     Cactus p1 = new Cactus("Igge", 0.2);
     Palmtree p2 = new Palmtree("Laura", 5);
     CarnivorousPlant p3 = new CarnivorousPlant("Meatloaf", 0.7);
     Palmtree p4 = new Palmtree("Putte", 1);
 
-    @org.junit.jupiter.api.Test
+    @Test
     public final void resultTest() {
         String correctStringP1 = "Igge ska ha 0.02l av mineralvatten per dag.";
         String correctStringP2 = "Laura ska ha 2.5l av kranvatten per dag.";
@@ -24,7 +25,6 @@ public class MainTest {
         assert (p2.getLiquidAmount() == correctDoubleP2);
         assert (p3.getLiquidAmount() == correctDoubleP3);
         assert (p4.getLiquidAmount() == correctDoubleP4);
-
     }
 }
 
